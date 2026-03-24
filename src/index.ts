@@ -35,11 +35,11 @@ program
     if (options.add) {
       await runExcludeCommand(currentPath);
     } else {
-      console.log("   --add    Ajouter des exclusions\n");
+      console.log("   --add    Add exclusion patterns\n");
     }
   })
-  .option("-a, --add", "Ajouter de nouveaux patterns d'exclusion")
-  .option("-s, --status", "Afficher le statut des exclusions (défaut)");
+  .option("-a, --add", "Add new exclusion patterns")
+  .option("-s, --status", "Show exclusion status (default)");
 
 program
   .argument("[path]", "Path to the directory to tree", process.cwd())
